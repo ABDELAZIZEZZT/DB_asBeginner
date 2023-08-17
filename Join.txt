@@ -1,0 +1,14 @@
+A JOIN operation in a relational database involves the combination of rows from two or more tables based on a related column between them. This related column is often referred to as a "foreign key," which establishes a connection between the tables. By utilizing JOIN operations, we can create a unified result set that contains data from multiple tables, enabling us to analyze relationships and extract consolidated information.
+
+Types of JOIN operations:
+There are several types of JOIN operations, each serving a specific purpose:
+
+INNER JOIN: This is the most common type of JOIN. It returns only the matching rows from both tables based on the specified condition. Rows that do not meet the condition are excluded from the result set.
+
+LEFT JOIN (or LEFT OUTER JOIN): This JOIN type returns all the rows from the left (or first) table and the matching rows from the right (or second) table. If there are no matches, the result will still contain rows from the left table with NULL values for columns from the right table.
+
+RIGHT JOIN (or RIGHT OUTER JOIN): Similar to the LEFT JOIN, the RIGHT JOIN returns all the rows from the right table and the matching rows from the left table. Non-matching rows from the right table will have NULL values for columns from the left table.
+
+FULL JOIN (or FULL OUTER JOIN): This type of JOIN returns all rows from both tables, along with their matches. Non-matching rows will have NULL values in columns from the table where there's no match.
+
+CROSS JOIN: A CROSS JOIN produces the Cartesian product of two tables, combining each row from the first table with every row from the second table. This results in a potentially large output, making it useful in specific scenarios.
